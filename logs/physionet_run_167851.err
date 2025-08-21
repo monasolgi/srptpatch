@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/solgi/srptpatch/run_models.py", line 91, in <module>
+    model = tPatchGNN(args).to(args.device)
+  File "/home/solgi/srptpatch/tPatchGNN/model/tPatchGNN.py", line 131, in __init__
+    self.nodevec1 = nn.Parameter(torch.randn(self.N, nodevec_dim).cuda(), requires_grad=True)
+  File "/home/solgi/miniconda3/envs/solgiland/lib/python3.9/site-packages/torch/cuda/__init__.py", line 247, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: No CUDA GPUs are available
