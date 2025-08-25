@@ -1,0 +1,3 @@
+torch.cuda.is_available() False
+PID, device: 429649 cpu
+Processing ../data/ushcn/raw/small_chunked_sporadic.csv...

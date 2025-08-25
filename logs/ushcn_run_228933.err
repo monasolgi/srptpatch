@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/solgi/srptpatch/run_models.py", line 86, in <module>
+    data_obj = parse_datasets(args, patch_ts=True)
+  File "/home/solgi/srptpatch/lib/parse_datasets.py", line 142, in parse_datasets
+    total_dataset = USHCN("../data/ushcn/", n_samples=args.n, device=device)
+  File "/home/solgi/srptpatch/lib/ushcn.py", line 21, in __init__
+    self.process()
+  File "/home/solgi/srptpatch/lib/ushcn.py", line 42, in process
+    full_data = pd.read_csv(filename, index_col=0)
+  File "/home/solgi/miniconda3/envs/solgiland/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/solgi/miniconda3/envs/solgiland/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/solgi/miniconda3/envs/solgiland/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/solgi/miniconda3/envs/solgiland/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/solgi/miniconda3/envs/solgiland/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/solgi/miniconda3/envs/solgiland/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/solgi/miniconda3/envs/solgiland/lib/python3.9/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/ushcn/raw/small_chunked_sporadic.csv'

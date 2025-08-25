@@ -1,0 +1,2 @@
+torch.cuda.is_available() False
+PID, device: 428118 cpu

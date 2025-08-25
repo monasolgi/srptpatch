@@ -1,0 +1,55 @@
+/home/solgi/srptpatch/run_models.py
+2025-08-24 15:10:59
+run_models.py --dataset activity --state def --history 24000 --patience 10 --batch_size 32 --lr 1e-3 --patch_size 8000 --stride 4000 --nhead 1 --tf_layer 1 --nlayer 1 --te_dim 10 --node_dim 10 --hid_dim 64 --outlayer Linear --gpu 1
+Namespace(state='def', n=100000000, hop=1, nhead=1, tf_layer=1, nlayer=1, epoch=1000, patience=10, history=24000, patch_size=8000.0, stride=4000.0, logmode='a', lr=0.001, w_decay=0.0, batch_size=32, save='experiments/', load=None, seed=1, dataset='activity', quantization=0.0, model='tPatchGNN', outlayer='Linear', hid_dim=64, te_dim=10, node_dim=10, gpu='1', npatch=5, device=device(type='cpu'), PID=429123, pred_window=1000, ndim=12)
+- Epoch 000, ExpID 85131
+Train - Loss (one batch): 0.01836
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.01662, 0.01662, 0.12891, 0.10056, 26.84%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.01568, 0.01568, 0.12522, 0.09836, 22.91%
+Time spent: 356.56s
+- Epoch 001, ExpID 85131
+Train - Loss (one batch): 0.01668
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.01621, 0.01621, 0.12733, 0.09863, 26.53%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 1, 0.01496, 0.01496, 0.12230, 0.09501, 22.26%
+Time spent: 357.77s
+- Epoch 002, ExpID 85131
+Train - Loss (one batch): 0.00575
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.00590, 0.00590, 0.07678, 0.05513, 14.78%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 2, 0.00504, 0.00504, 0.07102, 0.05101, 11.60%
+Time spent: 357.66s
+- Epoch 003, ExpID 85131
+Train - Loss (one batch): 0.00557
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.00443, 0.00443, 0.06653, 0.04517, 12.02%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 3, 0.00389, 0.00389, 0.06234, 0.04203, 9.60%
+Time spent: 358.45s
+- Epoch 004, ExpID 85131
+Train - Loss (one batch): 0.00329
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.00409, 0.00409, 0.06399, 0.04319, 11.35%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 4, 0.00367, 0.00367, 0.06059, 0.04051, 9.31%
+Time spent: 357.77s
+- Epoch 005, ExpID 85131
+Train - Loss (one batch): 0.00359
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.00521, 0.00521, 0.07220, 0.05487, 14.26%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 4, 0.00367, 0.00367, 0.06059, 0.04051, 9.31%
+Time spent: 320.25s
+- Epoch 006, ExpID 85131
+Train - Loss (one batch): 0.00384
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.00630, 0.00630, 0.07936, 0.06369, 15.60%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 4, 0.00367, 0.00367, 0.06059, 0.04051, 9.31%
+Time spent: 320.31s
+- Epoch 007, ExpID 85131
+Train - Loss (one batch): 0.00234
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.00442, 0.00442, 0.06646, 0.04925, 12.35%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 4, 0.00367, 0.00367, 0.06059, 0.04051, 9.31%
+Time spent: 320.25s
+- Epoch 008, ExpID 85131
+Train - Loss (one batch): 0.00263
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.00412, 0.00412, 0.06416, 0.04710, 11.82%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 4, 0.00367, 0.00367, 0.06059, 0.04051, 9.31%
+Time spent: 320.42s
+- Epoch 009, ExpID 85131
+Train - Loss (one batch): 0.00274
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.00470, 0.00470, 0.06857, 0.05282, 13.27%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 4, 0.00367, 0.00367, 0.06059, 0.04051, 9.31%
+Time spent: 322.92s
+slurmstepd: error: *** JOB 228931 ON test-000 CANCELLED AT 2025-08-24T16:11:02 DUE TO TIME LIMIT ***

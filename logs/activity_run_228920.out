@@ -1,0 +1,12 @@
+torch.cuda.is_available() False
+PID, device: 428564 cpu
+Total records: 25
+Dataset n_samples: 25 15 5 5
+data_max: tensor([5.6217, 3.9067, 2.4465, 5.3456, 3.9414, 2.2163, 5.7582, 3.9781, 2.6061,
+        5.3913, 3.9654, 2.6011])
+data_min: tensor([ 0.1852, -0.1228, -1.4615,  0.1606, -0.4760, -2.5436, -0.2787, -0.4944,
+        -2.0269,  0.0198, -0.4789, -1.9588])
+time_max: tensor(304861.)
+manual set time_max: tensor(1024)
+Dataset n_samples after time split: 5474 3363 1022 1089
+n_train_batches: 106

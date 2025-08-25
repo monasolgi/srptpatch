@@ -1,0 +1,14 @@
+usage: IMTS Forecasting [-h] [--state STATE] [-n N] [--hop HOP]
+                        [--nhead NHEAD] [--tf_layer TF_LAYER]
+                        [--nlayer NLAYER] [--epoch EPOCH]
+                        [--patience PATIENCE] [--history HISTORY]
+                        [-ps PATCH_SIZE] [--stride STRIDE] [--logmode LOGMODE]
+                        [--lr LR] [--w_decay W_DECAY] [-b BATCH_SIZE]
+                        [--save SAVE] [--load LOAD] [--seed SEED]
+                        [--dataset DATASET] [--quantization QUANTIZATION]
+                        [--model MODEL] [--outlayer OUTLAYER] [-hd HID_DIM]
+                        [-td TE_DIM] [-nd NODE_DIM] [--gpu GPU]
+IMTS Forecasting: error: unrecognized arguments: #Activity uses milliseconds
+/var/spool/slurm/d/job228924/slurm_script: line 19: --patience: command not found
+/var/spool/slurm/d/job228924/slurm_script: line 23: --stride: command not found
+/var/spool/slurm/d/job228924/slurm_script: line 24: --nhead: command not found

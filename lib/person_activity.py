@@ -256,6 +256,6 @@ def Activity_get_seq_length(args, records):
 if __name__ == '__main__':
 	torch.manual_seed(1991)
 
-	dataset = PersonActivity('data/PersonActivity', download=True)
+	dataset = PersonActivity('data/PersonActivity', download=False)
 	dataloader = DataLoader(dataset, batch_size=30, shuffle=True, collate_fn= variable_time_collate_fn_activity)
 	dataloader.__iter__().next()
