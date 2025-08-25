@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=physionet_run
-#SBATCH --output=logs/physionet_run_%j.out
-#SBATCH --error=logs/physionet_run_%j.err
+#SBATCH --job-name=ushcn_run
+#SBATCH --output=logs/ushcn_run_%j.out
+#SBATCH --error=logs/ushcn_run_%j.err
 #SBATCH --partition=TEST              # Specify the correct partition (not stud)
 
 
@@ -13,14 +13,14 @@
 gpu='1'
 
 python run_models.py \
---dataset physionet \
+--dataset ushcn \
 --state 'def' \
 --history 24 \
 --patience 10 \
 --batch_size 32 \
 --lr 1e-3 \
 --patch_size 8 \
---stride 4 \
+--stride 8 \
 --nhead 1 \
 --tf_layer 1 \
 --nlayer 1 \
