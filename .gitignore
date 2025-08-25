@@ -4,4 +4,5 @@ __pycache__/
 *.log
 .DS_Store
 *.env
-*.ipynb_checkpoints
+*.ipynb_checkpointsdata/physionet/processed/*.pt
+data/physionet/processed/*.pt
